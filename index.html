@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Gym Template">
+    <meta name="keywords" content="Gym, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Body Buddies | Your Favorit GYM</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/barfiller.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
+</head>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .slideshow {
+        position: relative;
+        z-index: 1;
+        height: 100%;
+
+    }
+
+    .slideshow * {
+        outline: none;
+    }
+
+    .slideshow .slider {
+        box-shadow: 0 20px 50px -25px black;
+    }
+
+    .slideshow .slider-track {
+        transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+    }
+
+    .slideshow .item {
+        height: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .slideshow .item img {
+        width: 100%;
+        transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+        transform: scale(1.2);
+    }
+
+    .slideshow .item.slick-active img {
+        transform: scale(1);
+        -webkit-animation: cssAnimation 8s 1 ease-in-out;
+        animation: cssAnimation 8s 1 ease-in-out;
+    }
+
+    @keyframes cssAnimation {
+        from {
+            -webkit-transform: scale(1.5) translate(0px);
+        }
+
+        to {
+            -webkit-transform: scale(1.0) translate(0px);
+        }
+    }
+
+    @-webkit-keyframes cssAnimation {
+
+        /* 1 */
+        from {
+            -webkit-transform: scale(1.5) translate(0px);
+        }
+
+        /* 1.3 */
+        to {
+            -webkit-transform: scale(1) translate(0px);
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .title {
+            font-size: 40px;
+        }
+    }
+
+    .slick-slide {
+        height: 1000px;
+    }
+
+    .slick-slide img {
+        height: 1000px;
+        object-fit: cover;
+    }
+</style>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Section Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="canvas-close">
+            <i class="fa fa-close"></i>
+        </div>
+        <div class="canvas-search search-switch">
+            <i class="fa fa-search"></i>
+        </div>
+        <nav class="canvas-menu mobile-menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#ppt">PPT</a></li>
+                <li><a href="./classes.html">Classes</a></li>
+                <li><a href="#plan">Plan</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="canvas-social">
+            <a href="https://www.facebook.com/bodybuddiesgym"><i class="fa fa-facebook"></i></a>
+            <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
+            <!-- <a href="#"><i class="fa fa-youtube-play"></i></a> -->
+            <a href="https://www.instagram.com/bodybuddies_gym/"><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+    <!-- Offcanvas Menu Section End -->
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h2 style="color:#3ce207 ;">Body Buddies</h2>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="nav-menu">
+                        <ul>
+                            <li class="active"><a href="./index.html">Home</a></li>
+                            <li><a href="#ppt">PPT</a></li>
+
+                            <li><a href="#plan">Plan</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="top-option">
+                        <div class="to-search search-switch">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <div class="to-social">
+                            <a href="https://www.facebook.com/bodybuddiesgym"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            <a href="https://www.instagram.com/bodybuddies_gym/"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas-open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero-section">
+        <!-- <div class="hs-slider owl-carousel">
+            <div class="hs-item set-bg" data-setbg="assets/IMG_20210820_121129.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-6">
+                            <div class="hi-text">
+                                <span>Shape your body</span>
+                                <h1>Be <strong>strong</strong> traning hard</h1>
+                                <a href="#" class="primary-btn">Get info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hs-item set-bg" data-setbg="assets/IMG_20210820_121212.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-6">
+                            <div class="hi-text">
+                                <span>Shape your body</span>
+                                <h1>Be <strong>strong</strong> traning hard</h1>
+                                <a href="#" class="primary-btn">Get info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+        <div class="slideshow">
+            <div
+                style="flex-direction: column; position: absolute;z-index: 999;width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;">
+                <img data-aos="fade-down" style="width: 700px;" src="assets/Logo - Transparent.png" alt="">
+                <h1 class="title text-white" data-aos="fade-up">PERSONALIZED FITNESS</h1>
+                <h1 class="title text-white" style="text-shadow: 2px 2px 2px green;" data-aos="fade-up">PERSONALIZED
+                    PERFORMANCE</h1>
+                <button class="m-5 w-50 btn" style="background-color: #f7f7f7;">Get Started !</button>
+            </div>
+
+            <div class="slider">
+
+
+
+                <div class="item">
+                    <img src="assets/bw1.jpeg" />
+
+                </div>
+                <div class="item">
+                    <img src="assets/bw2.jpeg" />
+                </div>
+                <div class="item">
+                    <img src="assets/bw3.jpeg" />
+                </div>
+                <div class="item">
+                    <img src="assets/bw6.jpeg" />
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- ChoseUs Section Begin -->
+    <section class="choseus-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <span>Why chose us?</span>
+                        <h2>PUSH YOUR LIMITS FORWARD</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="cs-item">
+                        <span class="flaticon-034-stationary-bike"></span>
+                        <h4>Modern equipment</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            dolore facilisis.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="cs-item">
+                        <span class="flaticon-033-juice"></span>
+                        <h4>Healthy nutrition plan</h4>
+                        <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                            facilisis.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="cs-item">
+                        <span class="flaticon-002-dumbell"></span>
+                        <h4>Proffesponal training plan</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            dolore facilisis.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="cs-item">
+                        <span class="flaticon-014-heart-beat"></span>
+                        <h4>Unique to your needs</h4>
+                        <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                            facilisis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ChoseUs Section End -->
+
+    <!-- Classes Section Begin -->
+    <section id="ppt" class="classes-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+
+                        <span style="font-size: 50px;">PPT</span>
+                        <h2>Private Personal Training</h2>
+
+                        <br>
+                        <br>
+
+
+                        <div class="d-flex container">
+                            <div class="p-4" style=" flex: 1;text-align: left;">
+                                <p> Welcome to your second home. You are unique and your training should be, too. No
+                                    matter your age or fitness level, we are invested in helping you reach your personal
+                                    goals because we take your health, well….personally. We don’t just jump in - we take
+                                    the time to get to know you and understand where you are starting on your wellness
+                                    journey, all before an experienced personal training team member creates your custom
+                                    workout program to put you on the path to success. Whether you’re training in-studio
+                                    or training virtually, we’re in this together. </p>
+                                <!-- <p>SPPT sessions are held in our facility with no more than 6 people in a session.
+
+                                    </p>
+                                    <p>Obtaining all the benefits of one to one personal training within a small group, while at a
+                                        fraction of the cost.</p>
+                                    <p>In every session, each client will essentially have their own “personal gym within a gym”</p>
+                                    <p>There is no sharing of equipment, having your own cardio equipment, dumbells, kettlebells etc… so
+                                        you can maximize your time in the gym.</p>
+                                    <p>This also enables us to maintain social distancing (At least 2 metres at all times)
+                
+                                    </p> -->
+                            </div>
+                            <div class="" style="flex: 1;">
+                                <div style="height: 100%;background-position-y: center;" class="about-video set-bg"
+                                    data-setbg="assets/bw4.jpeg">
+                                    <a href="assets/Intro v1.mp4" class="play-btn video-popup"><i
+                                            class="fa fa-caret-right"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ChoseUs Section End -->
+    <section class="choseus-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <span>Our Hygiene Protocol</span>
+                        <h2 style="font-size: 30px;">We pride ourselves on how clean at a “Showroom Standard” we keep
+                            our facility.
+
+                            On top of a cleaning company coming in weekly to deep clean our facility, we stick to a 3
+                            step hygiene protocol to keep you as safe as possible.</h2>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="cs-item">
+                        <!-- <span class="flaticon-034-stationary-bike"></span> -->
+                        <h4>Hand Sanitization</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            dolore facilisis.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="cs-item">
+                        <!-- <span class="flaticon-033-juice"></span> -->
+                        <h4> Social Distancing</h4>
+                        <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                            facilisis.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-auto">
+                    <div class="cs-item">
+                        <!-- <span class="flaticon-002-dumbell"></span> -->
+                        <h4>Fogging</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            dolore facilisis.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <br>
+    </section>
+    <!-- Banner Section Begin -->
+    <section id="ppt" class="classes-section spad">
+        <div class="container">
+            <center>
+                <h2 class="text-white">Facilities</h2>
+                <br>
+                <h5 class="text-white">
+                    1:1 > 20:1
+                    At Body Buddies Fitness we work 1:1 with clients in dedicated private rooms, not 20:1 like group
+                    classes.
+
+                    We can also offer 4:1 to 2:1 training because working out with spouses/friends/coworkers adds
+                    another layer of accountability and commitmen
+                </h5>
+            </center>
+            <br>
+            <br>
+            <div class="column justify-content-center">
+                <div style="flex:1;">
+                    <img src="assets/1.jpg" alt="">
+                </div>
+                <br>
+                <div style="flex:1;">
+                    <img src="assets/2.jpg" alt="">
+                </div>
+                <br>
+                <div style="flex:1;">
+                    <img src="assets/3.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Banner Section End -->
+    <section id="plan" class="pricing-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <span>Our Plan</span>
+                        <h2>Choose your pricing plan</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-8">
+                    <div class="ps-item">
+                        <h3>Class drop-in</h3>
+                        <div class="pi-price">
+                            <h2>$ 39.0</h2>
+                            <span>SINGLE CLASS</span>
+                        </div>
+                        <ul>
+                            <li>Free riding</li>
+                            <li>Unlimited equipments</li>
+                            <li>Personal trainer</li>
+                            <li>Weight losing classes</li>
+                            <li>Month to mouth</li>
+                            <li>No time restriction</li>
+                        </ul>
+                        <a href="#" class="primary-btn pricing-btn">Enroll now</a>
+                        <a href="#" class="thumb-icon"><i class="fa fa-picture-o"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8">
+                    <div class="ps-item">
+                        <h3>12 Month unlimited</h3>
+                        <div class="pi-price">
+                            <h2>$ 99.0</h2>
+                            <span>SINGLE CLASS</span>
+                        </div>
+                        <ul>
+                            <li>Free riding</li>
+                            <li>Unlimited equipments</li>
+                            <li>Personal trainer</li>
+                            <li>Weight losing classes</li>
+                            <li>Month to mouth</li>
+                            <li>No time restriction</li>
+                        </ul>
+                        <a href="#" class="primary-btn pricing-btn">Enroll now</a>
+                        <a href="#" class="thumb-icon"><i class="fa fa-picture-o"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8">
+                    <div class="ps-item">
+                        <h3>6 Month unlimited</h3>
+                        <div class="pi-price">
+                            <h2>$ 59.0</h2>
+                            <span>SINGLE CLASS</span>
+                        </div>
+                        <ul>
+                            <li>Free riding</li>
+                            <li>Unlimited equipments</li>
+                            <li>Personal trainer</li>
+                            <li>Weight losing classes</li>
+                            <li>Month to mouth</li>
+                            <li>No time restriction</li>
+                        </ul>
+                        <a href="#" class="primary-btn pricing-btn">Enroll now</a>
+                        <a href="#" class="thumb-icon"><i class="fa fa-picture-o"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Gallery Section Begin -->
+    <!-- <div id="gallery" class="gallery-section">
+        <center><h2>Our Facilities</h2></center>
+        <div class="gallery">
+            <div class="grid-sizer"></div>
+            <div class="gs-item grid-wide set-bg" data-setbg="assets/1.jpg">
+                <a href="assets/1.jpg" class="thumb-icon image-popup"><i class="fa fa-picture-o"></i></a>
+            </div>
+            <div class="gs-item set-bg" data-setbg="assets/2.jpg">
+                <a href="assets/2.jpg" class="thumb-icon image-popup"><i class="fa fa-picture-o"></i></a>
+            </div>
+            <div class="gs-item set-bg" data-setbg="assets/3.jpg">
+                <a href="assets/3.jpg" class="thumb-icon image-popup"><i class="fa fa-picture-o"></i></a>
+            </div>
+            <div class="gs-item set-bg" data-setbg="assets/w4.jpeg">
+                <a href="assets/w4.jpeg" class="thumb-icon image-popup"><i class="fa fa-picture-o"></i></a>
+            </div>
+            <div class="gs-item set-bg" data-setbg="assets/w5.jpeg">
+                <a href="assets/w5.jpeg" class="thumb-icon image-popup"><i class="fa fa-picture-o"></i></a>
+            </div>
+            <div class="gs-item grid-wide set-bg" data-setbg="assets/w6.jpeg">
+                <a href="assets/w6.jpeg" class="thumb-icon image-popup"><i class="fa fa-picture-o"></i></a>
+            </div> 
+        </div>
+    </div> -->
+    <!-- Gallery Section End -->
+
+    <!-- Team Section Begin -->
+    <section id="contact" class="contact-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-title contact-title">
+                        <span>Contact Us</span>
+                        <h2>GET IN TOUCH</h2>
+                    </div>
+                    <div class="contact-widget">
+                        <div class="cw-text">
+                            <i class="fa fa-map-marker"></i>
+                            <p>333 Middle Winchendon Rd, Rindge,<br /> NH 03461</p>
+                        </div>
+                        <div class="cw-text">
+                            <i class="fa fa-mobile"></i>
+                            <ul>
+                                <li>125-711-811</li>
+                                <li>125-668-886</li>
+                            </ul>
+                        </div>
+                        <div class="cw-text email">
+                            <i class="fa fa-envelope"></i>
+                            <p>Support.gymcenter@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="leave-comment">
+                        <form action="#">
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Email">
+                            <input type="text" placeholder="Website">
+                            <textarea placeholder="Comment"></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.3854188721593!2d-6.251469684161956!3d53.33635657997699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e97b7bd8c7f%3A0x2197a50cae09986!2sBody%20Buddies!5e0!3m2!1sid!2sid!4v1629975435253!5m2!1sid!2sid"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section End -->
+    <section class="testimonial-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <span>Testimonial</span>
+                        <h2>Our cilent say</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="ts_slider owl-carousel owl-loaded owl-drag">
+
+
+                <div class="owl-stage-outer">
+                    <div class="owl-stage"
+                        style="transform: translate3d(-2280px, 0px, 0px); transition: all 1.2s ease 0s; width: 6840px;">
+                        <div class="owl-item cloned" style="width: 1140px;">
+                            <div class="ts_item">
+                                <img class="w-100" src="assets/testi1.PNG" alt="">
+                            </div>
+                        </div>
+                        <div class="owl-item cloned" style="width: 1140px;">
+                            <div class="ts_item">
+                                <img class="w-100" src="assets/testi1.PNG" alt="">
+                            </div>
+                        </div>
+                        <div class="owl-item active" style="width: 1140px;">
+                            <div class="ts_item">
+                                <img class="w-100" src="assets/testi1.PNG" alt="">
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 1140px;">
+                            <div class="ts_item">
+                                <img class="w-100" src="assets/testi1.PNG" alt="">
+                            </div>
+                        </div>
+                        <div class="owl-item cloned" style="width: 1140px;">
+                            <div class="ts_item">
+                                <img class="w-100" src="assets/testi1.PNG" alt="">
+                            </div>
+                        </div>
+                        <div class="owl-item cloned" style="width: 1140px;">
+                            <div class="ts_item">
+                                <img class="w-100" src="assets/testi1.PNG" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><i
+                            class="fa fa-angle-left"></i></button><button type="button" role="presentation"
+                        class="owl-next"><i class="fa fa-angle-right"></i></button></div>
+                <div class="owl-dots disabled"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Get In Touch Section Begin -->
+    <div class="gettouch-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="gt-text">
+                        <i class="fa fa-map-marker"></i>
+                        <p>333 Middle Winchendon Rd, Rindge,<br /> NH 03461</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gt-text">
+                        <i class="fa fa-mobile"></i>
+                        <ul>
+                            <li>125-711-811</li>
+                            <li>125-668-886</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gt-text email">
+                        <i class="fa fa-envelope"></i>
+                        <p>Support.gymcenter@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Get In Touch Section End -->
+
+    <!-- Footer Section Begin -->
+    <section class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="fs-about">
+                        <div class="fa-logo">
+                            <a href="#"><img src="assets/Logo - Transparent.png" alt=""></a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore dolore magna aliqua endisse ultrices gravida lorem.</p>
+                        <div class="fa-social">
+                            <a href="https://www.facebook.com/bodybuddiesgym"><i class="fa fa-facebook"></i></a>
+                            <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
+                            <!-- <a href="#"><i class="fa fa-youtube-play"></i></a> -->
+                            <a href="https://www.instagram.com/bodybuddies_gym/"><i class="fa fa-instagram"></i></a>
+                            <!-- <a href="#"><i class="fa  fa-envelope-o"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="fs-widget">
+                        <h4>Useful links</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Classes</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="fs-widget">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">My account</a></li>
+                            <li><a href="#">Subscribe</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="fs-widget">
+                        <h4>Tips & Guides</h4>
+                        <div class="fw-recent">
+                            <h6><a href="#">Physical fitness may help prevent depression, anxiety</a></h6>
+                            <ul>
+                                <li>3 min read</li>
+                                <li>20 Comment</li>
+                            </ul>
+                        </div>
+                        <div class="fw-recent">
+                            <h6><a href="#">Fitness: The best exercise to lose belly fat and tone up...</a></h6>
+                            <ul>
+                                <li>3 min read</li>
+                                <li>20 Comment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="copyright-text">
+                        <p>
+
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved <i
+                                class="fa fa-heart" aria-hidden="true"></i> by <a href="" target="_blank">Body
+                                Buddies</a>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section End -->
+
+    <!-- Search model Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search model end -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.barfiller.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        $('.slider').slick({
+            draggable: true,
+            arrows: false,
+            dots: false,
+            fade: true,
+
+            autoplay: true,
+            autoplaySpeed: 10000,
+            infinite: true,
+            cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+
+        });
+
+
+    </script>
+</body>
+
+</html>
