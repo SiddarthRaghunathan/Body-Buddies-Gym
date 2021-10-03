@@ -737,6 +737,8 @@ ol {
 }
 
 .ps-item {
+	position: relative;
+	z-index: 1;
 	text-align: center;
 	padding: 40px 30px 52px;
 	border: 1px solid #464646;
@@ -746,13 +748,14 @@ ol {
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
-	margin-bottom: 30px;
-	position: relative;
+	margin-bottom: 64px;
 }
 
 .ps-item:hover {
 	background: #ffffff;
 	border-color: #ffffff;
+	transition: all 0.5s;
+
 }
 
 .ps-item:hover h3 {
@@ -777,11 +780,56 @@ ol {
 	visibility: visible;
 }
 
+.pricing_tag {
+	background-color: #3ce207;
+	-webkit-transform: skewY(4deg);
+	-ms-transform: skewY(4deg);
+	position: absolute;
+	bottom: 130px;
+	right: -20px;
+	z-index: 2;
+	padding: 6px 18px 6px 26px;
+}
+.pricing_tag p {
+	margin: 0;
+	font-size: 14px;
+	color: #fff;
+	font-weight: 800;
+}
+.pricing_tag::before, .pricing_tag::after {
+	position: absolute;
+	content: '';
+}
+.pricing_tag::after {
+	width:20px;
+	height:20px;
+	background-color:#01937C;
+	right: -1px;
+	bottom:-19.2px;
+	clip-path: polygon(0 0, 0% 100%, 100% 0);
+	z-index: 1;
+}
+.pricing_tag::before {
+	width:25px;
+	height:100%;
+	left: -1px;
+	top: 0px;
+	background: #151515;
+	clip-path: polygon(0 0, 0% 100%, 53% 46%);
+	transition: all 0.5s;
+
+}
+.ps-item:hover .pricing_tag::before {
+	background : #fff;
+	transition: all 0.5s;
+
+}
+
 .ps-item h3 {
 	font-size: 28px;
 	color: #ffffff;
 	font-weight: 600;
-	margin-bottom: 16px;
+	margin-bottom: 114px;
 	-webkit-transform: skewY(4deg);
 	-ms-transform: skewY(4deg);
 	transform: skewY(4deg);
@@ -2538,7 +2586,7 @@ ol {
 }
 
 .section-title.contact-title {
-	text-align: left;
+
 	margin-bottom: 35px;
 }
 
@@ -2639,6 +2687,24 @@ ol {
 	font-weight: 700;
 	letter-spacing: 2px;
 	margin-bottom: 15px;
+}
+
+.scial {
+	display: flex;
+	align-items: center;
+}
+
+
+.scial li {
+	
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+	margin: 10px;
+}
+
+.scial li a {
+	color: #3ce207;
 }
 
 .text-404 h3 {
@@ -2756,6 +2822,14 @@ ol {
 	}
 	.blog-item .bi-pic img {
 		height: auto;
+	}
+
+	.pricing_tag {
+		padding: 2px 8px 2px 18px;
+	}
+	.pricing_tag p {
+
+		font-size: 12px;
 	}
 }
 
@@ -3220,5 +3294,11 @@ ol {
 	}
 	.search-model-form input {
 		font-size: 28px;
+	}
+	.pricing_tag {
+		padding: 2px 8px 2px 18px;
+	}
+	.pricing_tag p {
+		font-size: 8px;
 	}
 }

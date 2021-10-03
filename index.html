@@ -28,6 +28,10 @@
 </head>
 
 <style>
+    body {
+        overflow: auto;
+    }
+
     html {
         scroll-behavior: smooth;
     }
@@ -43,10 +47,16 @@
         outline: none;
     }
 
+
+    
     .slideshow .slider {
         box-shadow: 0 20px 50px -25px black;
     }
 
+
+    .canvas-open {
+        margin: 27px;
+    }
     .slideshow .slider-track {
         transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
     }
@@ -96,7 +106,14 @@
         .title {
             font-size: 40px;
         }
+
+        .ppt {
+            flex-direction: column;
+        }
+
+
     }
+
 
     .slick-slide {
         height: 1000px;
@@ -105,6 +122,15 @@
     .slick-slide img {
         height: 1000px;
         object-fit: cover;
+    }
+
+    #head.scrolled {
+        background-color: #424242 !important;
+        transition: background-color 200ms linear;
+    }
+
+    #head {
+        transition: 1s;
     }
 </style>
 
@@ -123,13 +149,14 @@
         <div class="canvas-search search-switch">
             <i class="fa fa-search"></i>
         </div>
-        <nav class="canvas-menu mobile-menu">
+        <nav class="navb canvas-menu mobile-menu">
             <ul>
-                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#ppt">PPT</a></li>
-                <li><a href="./classes.html">Classes</a></li>
+                <li><a href="#fac">Facilities</a></li>
                 <li><a href="#plan">Plan</a></li>
-                <li><a href="#gallery">Gallery</a></li>
+
+                <li><a href="#com">Comunity</a></li>
 
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -145,22 +172,23 @@
     <!-- Offcanvas Menu Section End -->
 
     <!-- Header Section Begin -->
-    <header class="header-section">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-3">
+    <header id="head" class="header-section fixed-top" style="position: fixed;">
+        <div class="container-fluid ">
+            <div class="row ">
+                <div class="col-lg-3 ">
                     <!--<h2 style="color:#3ce207 ;">Body Buddies</h2>-->
                     <img data-aos="fade-down" style="width: 200px;top:0px;" src="assets/Logo - Transparent.png" alt="">
                 </div>
 
-                <div class="col-lg-6">
-                    <nav class="nav-menu">
+                <div class="col-lg-6 ">
+                    <nav class="navb nav-menu sticky-top">
                         <ul>
-                            <li class="active"><a href="./index.html">Home</a></li>
+                            <li class="active"><a href="#">Home</a></li>
                             <li><a href="#ppt">PPT</a></li>
-
+                            <li><a href="#fac">Facilities</a></li>
                             <li><a href="#plan">Plan</a></li>
-                            <li><a href="#gallery">Gallery</a></li>
+
+                            <li><a href="#com">Comunity</a></li>
 
                             <li><a href="#contact">Contact</a></li>
                         </ul>
@@ -222,11 +250,14 @@
         <div class="slideshow">
             <div
                 style="flex-direction: column; position: absolute;z-index: 999;width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;">
-                <img data-aos="fade-down" style="width: 700px;" src="assets/Logo - Transparent.png" alt="">
-                <h1 class="title text-white" data-aos="fade-up">PERSONALIZED FITNESS</h1>
-                <h1 class="title text-white" style="text-shadow: 2px 2px 2px green;" data-aos="fade-up">PERSONALIZED
-                    PERFORMANCE</h1>
-                <button class="m-5 w-25 btn" style="background-color: #47c71c;">Contact us for a free consult !</button>
+                <!-- <img data-aos="fade-down" style="width: 700px;" src="assets/Logo - Transparent.png" alt=""> -->
+                <center>
+                    <h1 class="title text-white" data-aos="fade-up">PERSONALIZED FITNESS</h1>
+                    <h1 class="title text-white" style="text-shadow: 2px 2px 2px green;" data-aos="fade-up">PERSONALIZED
+                        PERFORMANCE</h1>
+                    <button class="m-5 w-25 btn" style="background-color: #47c71c;"><b>Get Free Consult !
+                            !</b></button>
+                </center>
             </div>
 
             <div class="slider">
@@ -313,23 +344,25 @@
                     <div class="section-title">
 
                         <!--<span style="font-size: 50px;">PPT</span>-->
-                        <h2>Private Personal Training</h2>                    
-                        
-                        <div class="d-flex container">
+                        <h2>Private Personal Training</h2>
+                        <br>
+                        <div class="d-flex container ppt">
                             <div class="p-4" style=" flex: 1;text-align: left;">
                                 <p> Welcome to your second home. You are unique and your training should be, too.
-                                    <br> 
-                                    No matter your age or fitness level, we are invested in helping you reach your personal
-                                    goals because we take your health, well….personally. <br> 
+                                    <br>
+                                    No matter your age or fitness level, we are invested in helping you reach your
+                                    personal
+                                    goals because we take your health, well….personally. <br>
                                     We don’t just jump in - we take
                                     the time to get to know you and understand where you are starting on your wellness
                                     journey, all before our head trainer who creates your custom
                                     workout program to put you on the path to success. Whether you’re training in-studio
-                                    or training virtually, we’re in this together. </p>
+                                    or training virtually, we’re in this together.
+                                </p>
 
                             </div>
-                            <div class="" style="flex: 1;">
-                                <div style="height: 125%;background-position-y: center;" class="about-video set-bg"
+                            <div style="flex: 1;">
+                                <div style="height: 400px;background-position-y: center;" class="about-video set-bg"
                                     data-setbg="assets/Mark.jpg">
                                     <a href="assets/Intro v1.mp4" class="play-btn video-popup"><i
                                             class="fa fa-caret-right"></i></a>
@@ -364,22 +397,26 @@
                     <div class="cs-item">
                         <!-- <span class="flaticon-034-stationary-bike"></span> -->
                         <h4>Hand Sanitization</h4>
-                        <p>At every individual workout pod, each person will have their own hand sanitizing station as well as an additional personal cleaning kit.</p>
+                        <p>At every individual workout pod, each person will have their own hand sanitizing station as
+                            well as an additional personal cleaning kit.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="cs-item">
                         <!-- <span class="flaticon-033-juice"></span> -->
                         <h4> Social Distancing</h4>
-                        <p>Our overall aim is to ensure all clients feel 100% safe and comfortable while enjoying their training experience.
-                             With our “mini gym designation’ this allows us to keep at least 2 metres social distancing at all times, with plenty of room to maximize your session safely.</p>
+                        <p>Our overall aim is to ensure all clients feel 100% safe and comfortable while enjoying their
+                            training experience.
+                            With our “mini gym designation’ this allows us to keep at least 2 metres social distancing
+                            at all times, with plenty of room to maximize your session safely.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-auto">
                     <div class="cs-item">
                         <!-- <span class="flaticon-002-dumbell"></span> -->
                         <h4>Fogging</h4>
-                        <p>With our on site disinfectant spray. It allows us to disinfect viruses & bacteria both on surfaces and in the air along with infection control. 
+                        <p>With our on site disinfectant spray. It allows us to disinfect viruses & bacteria both on
+                            surfaces and in the air along with infection control.
                             Making it so much easier to keep every inch of the facility clean.</p>
                     </div>
                 </div>
@@ -423,19 +460,23 @@
     </section> -->
     <!-- Facilities Section End -->
     <!-- Facilities Section2 Start -->
-    <section class="classes-section spad">
+    <section id="fac" class="classes-section spad">
         <div class="container">
             <center>
                 <h2 class="text-white">Facilities</h2>
                 <br>
+
                 <h5 class="text-white">
-                    1:1 > 20:1. At Body Buddies Fitness we work 1:1 with clients in our dedicated private rooms, not 20:1 like group
+                    1:1 > 20:1. At Body Buddies Fitness we work 1:1 with clients in our dedicated private rooms, not
+                    20:1 like group
                     classes. <br>
                     We can also offer 6:1 to 2:1 training because working out with spouses/friends/coworkers adds
                     another layer of accountability and commitment.
                 </h5>
             </center>
-        </div>    
+            <br>
+            <br>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -455,7 +496,7 @@
                                 <img class="col-md-8 offset-md-2" src="assets/1.jpg" alt="">
                             </div>
                         </div>
-                        <div class="owl-item cloned" style="width: 1140px;" >
+                        <div class="owl-item cloned" style="width: 1140px;">
                             <div class="ts_item">
                                 <img class="col-md-8 offset-md-2" src="assets/2&3.jpg" alt="">
 
@@ -471,7 +512,7 @@
         </div>
     </section>
     <!-- Facilities Section2 End -->
-    
+
     <section id="plan" class="pricing-section spad">
         <div class="container">
             <div class="row">
@@ -483,19 +524,40 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-8">
+                <div class="col-lg-5 col-md-8">
                     <div class="ps-item">
+                        <div class="pricing_tag">
+                            <p>VIP Package</p>
+                        </div>
                         <h3>Personal Training 1:1</h3>
                         <div class="pi-price">
-                            <h2>€350</h2>
+                            <h2>€350 <span class="tip" style="position: absolute;" data-bs-toggle="tooltip"
+                                    data-bs-placement="right" title="SESSIONS INCLUDE:
+- FREE NUTRITION CONSULTATION
+- UNLIMITED EQUIPMENTS
+- OPTIONAL MEASUREMENTS MONITORING
+- WEIGHT LOSING TIPS
+- NO TIME RESTRICTION "><i class="fa fa-exclamation-circle fa-1x"></i></span></h2>
                             <span>8 sessions</span>
                         </div>
                         <div class="pi-price">
-                            <h2>€550</h2>
+                            <h2>€550 <span class="tip" style="position: absolute;" data-bs-toggle="tooltip"
+                                    data-bs-placement="right" title="SESSIONS INCLUDE:
+- FREE NUTRITION CONSULTATION
+- UNLIMITED EQUIPMENTS
+- OPTIONAL MEASUREMENTS MONITORING
+- WEIGHT LOSING TIPS
+- NO TIME RESTRICTION "><i class="fa fa-exclamation-circle fa-1x"></i></span></h2>
                             <span>12 sessions</span>
                         </div>
                         <div class="pi-price">
-                            <h2>€1450</h2>
+                            <h2>€1450 <span class="tip" style="position: absolute;" data-bs-toggle="tooltip"
+                                    data-bs-placement="right" title="SESSIONS INCLUDE:
+- FREE NUTRITION CONSULTATION
+- UNLIMITED EQUIPMENTS
+- OPTIONAL MEASUREMENTS MONITORING
+- WEIGHT LOSING TIPS
+- NO TIME RESTRICTION "><i class="fa fa-exclamation-circle fa-1x"></i></span></h2>
                             <span>36 sessions <br>(3 sessions per week)</span>
                         </div>
                         <!--<ul>
@@ -509,40 +571,66 @@
                         <a href="#" class="thumb-icon"><i class="fa fa-picture-o"></i></a>-->
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-8">
+                <div class="col-lg-5 col-md-8">
                     <div class="ps-item">
                         <h3>Personal Training 2:1</h3>
+                        <div class="pricing_tag">
+                            <p>VIP Package</p>
+                        </div>
                         <div class="pi-price">
-                            <h2>€450</h2>
+                            <h2>€450 <span class="tip" style="position: absolute;" data-bs-toggle="tooltip"
+                                    data-bs-placement="right" title="SESSIONS INCLUDE:
+- FREE NUTRITION CONSULTATION
+- UNLIMITED EQUIPMENTS
+- OPTIONAL MEASUREMENTS MONITORING
+- WEIGHT LOSING TIPS
+- NO TIME RESTRICTION "><i class="fa fa-exclamation-circle fa-1x"></i></span></h2>
                             <span>8 sessions</span>
                         </div>
                         <div class="pi-price">
-                            <h2>€650</h2>
+                            <h2>€650 <span class="tip" style="position: absolute;" data-bs-toggle="tooltip"
+                                    data-bs-placement="right" title="SESSIONS INCLUDE:
+- FREE NUTRITION CONSULTATION
+- UNLIMITED EQUIPMENTS
+- OPTIONAL MEASUREMENTS MONITORING
+- WEIGHT LOSING TIPS
+- NO TIME RESTRICTION "><i class="fa fa-exclamation-circle fa-1x"></i></span></h2>
                             <span>12 sessions</span>
                         </div>
                         <div class="pi-price">
-                            <h2>€1800</h2>
+                            <h2>€1800 <span class="tip" style="position: absolute;" data-bs-toggle="tooltip"
+                                    data-bs-placement="right" title="SESSIONS INCLUDE:
+- FREE NUTRITION CONSULTATION
+- UNLIMITED EQUIPMENTS
+- OPTIONAL MEASUREMENTS MONITORING
+- WEIGHT LOSING TIPS
+- NO TIME RESTRICTION "><i class="fa fa-exclamation-circle fa-1x"></i></span></h2>
                             <span>36 sessions <br>(3 sessions per week)</span>
                         </div>
                         <!--<a href="#" class="primary-btn pricing-btn">Enroll now</a>
                         <a href="#" class="thumb-icon"><i class="fa fa-picture-o"></i></a>-->
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-8">
+                <div class="col-lg-5 col-md-8">
                     <div class="ps-item">
                         <h3>Group Training 6:1</h3>
-
                         <div class="pi-price">
-                            <h2>€160</h2>
+                            <h2>€160 <span class="tip" style="position: absolute;" data-bs-toggle="tooltip"
+                                    data-bs-placement="right" title="SESSIONS INCLUDE:
+- FREE NUTRITION CONSULTATION
+- UNLIMITED EQUIPMENTS
+- OPTIONAL MEASUREMENTS MONITORING
+- WEIGHT LOSING TIPS
+- NO TIME RESTRICTION"><i class="fa fa-exclamation-circle fa-1x"></i></span></h2>
                             <span>12 sessions <br>(3 sessions per week)</span><br>
                             <br><span>All Sessions Include:</span><br>
-                        <br>
+                            <br>
                             <span>- Free nutrition consultation<br></span>
                             <span>- Unlimited equipments<br></span>
                             <span>- Optional measurements monitoring<br></span>
                             <span>- Weight losing tips<br></span>
                             <span>- No time restriction<br></span>
-                        
+                            <!-- <button class="tip">My button</button> -->
                         </div>
                         <!--<a href="#" class="primary-btn pricing-btn">Enroll now</a>
                         <a href="#" class="thumb-icon"><i class="fa fa-picture-o"></i></a>-->
@@ -551,7 +639,6 @@
             </div>
         </div>
     </section>
-    
 
 
     <!-- Gallery Section Begin -->
@@ -582,7 +669,7 @@
     <!-- Gallery Section End -->
 
 
-    <section class="testimonial-section spad">
+    <section id="com" class="testimonial-section spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -637,83 +724,108 @@
             </div>
         </div>
     </section>
-        <!-- Team Section Begin -->
-        <section id="contact" class="contact-section spad">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="section-title contact-title">
-                            <span>Contact Us</span>
-                            <h2>GET IN TOUCH</h2>
-                        </div>
-                        <div class="contact-widget">
-                            <div class="cw-text">
-                                <i class="fa fa-map-marker"></i>
-                                <p>36 Fitzwilliam Street Upper, Dublin 2<br /> D02 YD43</p>
-                            </div>
-                            <div class="cw-text">
-                                <i class="fa fa-mobile"></i>
-                                <ul>
-                                    <li>125-711-811</li>
-                                    <li>125-668-886</li>
-                                </ul>
-                            </div>
-                            <div class="cw-text email">
-                                <i class="fa fa-envelope"></i>
-                                <p>Support.gymcenter@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="leave-comment">
-                            <form action="#">
-                                <input type="text" placeholder="Name">
-                                <input type="text" placeholder="Email">
-                                <input type="text" placeholder="Website">
-                                <textarea placeholder="Comment"></textarea>
-                                <button type="submit">Submit</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.3854188721593!2d-6.251469684161956!3d53.33635657997699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e97b7bd8c7f%3A0x2197a50cae09986!2sBody%20Buddies!5e0!3m2!1sid!2sid!4v1629975435253!5m2!1sid!2sid"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-        </section>
-        <!-- Team Section End -->
-    <!-- Get In Touch Section Begin -->
-    <div class="gettouch-section">
+    <!-- Team Section Begin -->
+    <section id="contact" class="contact-section spad">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="gt-text">
-                        <i class="fa fa-map-marker"></i>
-                        <p>333 Middle Winchendon Rd, Rindge,<br /> NH 03461</p>
+            <div class="d-flex justify-content-center">
+
+                    <div>
+                        <div class="section-title contact-title">
+                        
+                        <h2>CONTACT US</h2>
+
+                            <br>
+                            <br>
+                            <br>
+                        <div class="">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="gt-text">
+                                            <i class="fa fa-map-marker"></i>
+                                            <p>333 Middle Winchendon Rd, Rindge,<br /> NH 03461</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="gt-text">
+                                            <i class="fa fa-mobile"></i>
+                                            <ul>
+                                                <li>125-711-811</li>
+                                                <li>125-668-886</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="gt-text email">
+                                            <i class="fa fa-envelope"></i>
+                                            <p>Support.gymcenter@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h2>Our Social Media</h2>
+                                <br>
+                                <div class="row d-flex justify-content-around">
+                                    <ul class="scial">
+                                        <li ><a href=""><i class="fa fa-instagram fa-2x"></i> Instagram</a></li>
+                                        <li ><a href=""><i class="fa fa-facebook fa-2x"></i> Facebook</a></li>
+                                        <li ><a href=""><i class="fa fa-twitter fa-2x"></i> Twitter</a></li>
+                                        <li ><a href=""><i class="fa fa-youtube fa-2x"></i> Youtube</a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="gt-text">
-                        <i class="fa fa-mobile"></i>
-                        <ul>
-                            <li>125-711-811</li>
-                            <li>125-668-886</li>
-                        </ul>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="gt-text email">
-                        <i class="fa fa-envelope"></i>
-                        <p>Support.gymcenter@gmail.com</p>
+
+                <!-- <div class="col-lg-12">
+                    <div class="section-title contact-title">
+                        <span>Contact Us</span>
+                        <h2>GET IN TOUCH</h2>
                     </div>
-                </div>
+                    <div class="contact-widget">
+                        <div class="cw-text">
+                            <i class="fa fa-map-marker"></i>
+                            <p>36 Fitzwilliam Street Upper, Dublin 2<br /> D02 YD43</p>
+                        </div>
+                        <div class="cw-text">
+                            <i class="fa fa-mobile"></i>
+                            <ul>
+                                <li>125-711-811</li>
+                                <li>125-668-886</li>
+                            </ul>
+                        </div>
+                        <div class="cw-text email">
+                            <i class="fa fa-envelope"></i>
+                            <p>bodybuddiesireland@gmail.com </p>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="col-lg-6">
+                    <div class="leave-comment">
+                        <form action="#">
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Email">
+                            <input type="text" placeholder="Website">
+                            <textarea placeholder="Comment"></textarea>
+                            <button onclick="sendmail()">Submit</button>
+                        </form>
+                    </div>
+                </div> -->
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.3854188721593!2d-6.251469684161956!3d53.33635657997699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e97b7bd8c7f%3A0x2197a50cae09986!2sBody%20Buddies!5e0!3m2!1sid!2sid!4v1629975435253!5m2!1sid!2sid"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
-    </div>
-
-
+    </section>
+    <!-- Team Section End -->
+    <!-- Get In Touch Section Begin -->
+   
+ 
 
     <!-- Get In Touch Section End -->
 
@@ -807,6 +919,7 @@
         </div>
     </div>
     <!-- Search model end -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
@@ -817,10 +930,12 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
     <script>
         AOS.init();
     </script>
@@ -837,6 +952,79 @@
             cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
 
         });
+
+
+    </script>
+
+<script>
+      tippy('.tip', {
+        content: "SESSIONS INCLUDE:<br>- FREE NUTRITION CONSULTATION<br>- UNLIMITED EQUIPMENTS<br>- OPTIONAL MEASUREMENTS MONITORING<br>- WEIGHT LOSING TIPS<br>- NO TIME RESTRICTION",
+        allowHTML: true,
+        trigger:'click'
+      });
+</script>
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#head");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+
+
+        $(document).ready(function () {
+            $('a').on('click', function (e) {
+                // e.preventDefault();
+
+
+                var any = document.querySelectorAll(".navb li");
+                for (let i = 0; i < any.length; i++) {
+                    any[i].classList.remove('active');
+
+                }
+
+                $(this).parent('li').addClass("active");
+
+                var target = this.hash,
+                    $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top - 90
+                }, 900, 'swing', function () {
+                });
+
+                console.log(window.location);
+
+                return false;
+            });
+        });
+
+
+// $(document).ready(function () {
+
+// var sideNav = $("#navb > li > a");
+// $("body").on('scroll', function (event) {
+//     var top = $("body").scrollTop();
+//     sideNav.each(function (index) {
+//         if (top === $(this).offset().top) {
+//             $(this).parent('li').addClass("active");
+//             $(this).parent('li').siblings.removeClass("active");
+//         }
+//     })
+// });
+
+// $("a").click(function () {
+
+//     var any = document.querySelectorAll(".navb li");
+//     for (let i = 0; i < any.length; i++) {
+//        any[i].classList.remove('active');
+
+//     }
+
+//     $(this).parent('li').addClass("active");
+// });
+
+// });
 
 
     </script>
