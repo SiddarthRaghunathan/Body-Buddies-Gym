@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="zxx">
-
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Gym Template">
@@ -23,8 +22,13 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <style>
@@ -55,7 +59,9 @@
 
 
     .canvas-open {
-        margin: 27px;
+        position: absolute;
+        top: 1.5em;
+        right: 1em;
     }
     .slideshow .slider-track {
         transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
@@ -129,9 +135,9 @@
         transition: background-color 200ms linear;
     }
 
-    #head {
+    /* #head {
         transition: 1s;
-    }
+    } */
 </style>
 
 <body>
@@ -175,27 +181,43 @@
     <header id="head" class="header-section fixed-top" style="position: fixed;">
         <div class="container-fluid ">
             <div class="row ">
-                <div class="col-lg-3 ">
+                <div class="col-lg-4 ">
                     <!--<h2 style="color:#3ce207 ;">Body Buddies</h2>-->
-                    <img data-aos="fade-down" style="width: 200px;top:0px;" src="assets/Logo - Transparent.png" alt="">
+                    <img data-aos="fade-down" src="assets/Logo - Transparent.png" alt="">
+                     <div class="link-nav">
+                        <a href=""><i class="fa fa-envelope-open"></i> &nbsp;bodybuddiespt@gmail.com </a>    <br>
+                        <a href="https://www.facebook.com/bodybuddiesgym"><i class="fa fa-facebook icon-a"></i> &nbsp; Facebook</a> &nbsp;&nbsp;&nbsp;
+                        <a href="https://www.instagram.com/bodybuddies_gym/"><i class="fa fa-instagram"></i> &nbsp;Instagram</a>
+                     </div>
+                  
                 </div>
 
                 <div class="col-lg-6 ">
                     <nav class="navb nav-menu sticky-top">
-                        <ul>
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#ppt">PPT</a></li>
-                            <li><a href="#fac">Facilities</a></li>
-                            <li><a href="#plan">Plan</a></li>
-
-                            <li><a href="#com">Comunity</a></li>
-
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
+                        <ul class="nav justify-content-center position-fixed">
+                            <li class="nav-item">
+                              <a class="nav-link active" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#ppt">PPT</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#fac">Facilities</a>
+                            </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#plan">Plan</a>
+                            </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#com">Comnunity</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                          </ul>
                     </nav>
                 </div>
-                <div class="col-lg-3">
-                    <div class="top-option" style="position:absolute;right:50px; bottom:50px;">
+                <div class="col-lg-2 mt-4">
+                    <div class="top-option" >
                         <div class="to-search search-switch">
                             <i class="fa fa-search"></i>
                         </div>
@@ -255,8 +277,7 @@
                     <h1 class="title text-white" data-aos="fade-up">PERSONALIZED FITNESS</h1>
                     <h1 class="title text-white" style="text-shadow: 2px 2px 2px green;" data-aos="fade-up">PERSONALIZED
                         PERFORMANCE</h1>
-                    <button class="m-5 w-25 btn" style="background-color: #47c71c;"><b>Get Free Consult !
-                            !</b></button>
+                    <button class="m-5 btn free" style="background-color: #47c71c;" onclick="location.href='#contact';"><b>Get Free Consult</b> &nbsp; <i class="fa fa-user"></i></button>
                 </center>
             </div>
 
@@ -293,45 +314,20 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <span>Why chose us?</span>
-                        <h2>PUSH YOUR LIMITS FORWARD</h2>
+                        <span>About Us?</span>
+                        <div class="text-aboutus">
+                            <p> Body Buddies is a Brand new Personal Training, and Small Group Training studio based in Dublin 2. Our team consists of dedicated professionals exceeding 50 years’ experience in the fitness industry.
+                                We offer our members the highest level of expertise in personal training and nutrition guidance. In the comfort of top-class facilities, our coaching team will support you achieve your goals.
+                                Our main objective is to get the results you want. We provide the time necessary to build a strong foundation in technique and knowledge to enable you to achieve your personal goals.
+                                Our proven training system accompanied by a motivating and educating approach has helped members time and time again exceed their desired results.  
+                                Without crash diets or quick fixes, we get guaranteed real results that will leave you feeling energised, healthy, and stronger than ever.
+                            </p>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="cs-item">
-                        <span class="flaticon-034-stationary-bike"></span>
-                        <h4>Modern equipment</h4>
-                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            dolore facilisis.</p> -->
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="cs-item">
-                        <span class="flaticon-033-juice"></span>
-                        <h4>Healthy nutrition plan</h4>
-                        <!-- <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-                            facilisis.</p> -->
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="cs-item">
-                        <span class="flaticon-002-dumbell"></span>
-                        <h4>Professional training plan</h4>
-                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            dolore facilisis.</p> -->
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="cs-item">
-                        <span class="flaticon-014-heart-beat"></span>
-                        <h4>Unique to your needs</h4>
-                        <!-- <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-                            facilisis.</p> -->
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </section>
     <!-- ChoseUs Section End -->
@@ -368,7 +364,6 @@
                                             class="fa fa-caret-right"></i></a>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -377,55 +372,7 @@
         </div>
     </section>
     <!-- PPT Section End -->
-    <section class="choseus-section spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <span>Our Hygiene Protocol</span>
-                        <h2 style="font-size: 30px;">We pride ourselves on how clean at a “Showroom Standard” we keep
-                            our facility. We stick to a 3
-                            step hygiene protocol to keep you as safe as possible.</h2>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="row">
-
-                <div class="col-lg-4 col-sm-6">
-                    <div class="cs-item">
-                        <!-- <span class="flaticon-034-stationary-bike"></span> -->
-                        <h4>Hand Sanitization</h4>
-                        <p>At every individual workout pod, each person will have their own hand sanitizing station as
-                            well as an additional personal cleaning kit.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="cs-item">
-                        <!-- <span class="flaticon-033-juice"></span> -->
-                        <h4> Social Distancing</h4>
-                        <p>Our overall aim is to ensure all clients feel 100% safe and comfortable while enjoying their
-                            training experience.
-                            With our “mini gym designation’ this allows us to keep at least 2 metres social distancing
-                            at all times, with plenty of room to maximize your session safely.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-auto">
-                    <div class="cs-item">
-                        <!-- <span class="flaticon-002-dumbell"></span> -->
-                        <h4>Fogging</h4>
-                        <p>With our on site disinfectant spray. It allows us to disinfect viruses & bacteria both on
-                            surfaces and in the air along with infection control.
-                            Making it so much easier to keep every inch of the facility clean.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <br>
-        <br>
-    </section>
+    
     <!-- Facilities Section Begin -->
     <!-- <section id="ppt" class="classes-section spad">
         <div class="container">
@@ -520,6 +467,7 @@
                     <div class="section-title">
                         <span>Our Plan</span>
                         <h2>Choose your pricing plan</h2>
+                       
                     </div>
                 </div>
             </div>
@@ -529,35 +477,19 @@
                         <div class="pricing_tag">
                             <p>VIP Package</p>
                         </div>
-                        <h3>Personal Training 1:1</h3>
+                        <h3>Personal Training 1:1<span class="tip" style="position: fixed; font-size: 15px;" data-bs-toggle="tooltip"
+                            data-bs-placement="right" title="
+                           Who is it for?<br><br>• YOU!! Anyone interested in getting fit and healthy<br>• Anyone looking to enhance their strength to prevent or aid recovery from an injury<br>• Any beginner who is intimated by a busy gym or crowed group classes<br>• Someone who is ready to change and put the hard work in ( no quick fix here )<br>• COMPLETE FLEXIBILITY with Personal Training you can pick the days/times that suit best to work around your busy life schedule <br><br>What do you get?<br>• Body Buddies trainers provide each member with 100% time and attention in every session<br>• A full body composition and weekly check-ins with the Tabitha scales ( no more uncomfortable body pinching )<br>Nutrition guidance – tailored to you<br>• Education on technique and the correct training methods<br>• Fun friendly environment (egos left at the door)<br>• Results without restrictions"><i class="fa fa-exclamation-circle fa-1x" ></i></span></h3>
                         <div class="pi-price">
-                            <h2>€350 <span class="tip" style="position: absolute;" data-bs-toggle="tooltip"
-                                    data-bs-placement="right" title="SESSIONS INCLUDE:
-- FREE NUTRITION CONSULTATION
-- UNLIMITED EQUIPMENTS
-- OPTIONAL MEASUREMENTS MONITORING
-- WEIGHT LOSING TIPS
-- NO TIME RESTRICTION "><i class="fa fa-exclamation-circle fa-1x"></i></span></h2>
+                            <h2>€350</h2>
                             <span>8 sessions</span>
                         </div>
                         <div class="pi-price">
-                            <h2>€550 <span class="tip" style="position: absolute;" data-bs-toggle="tooltip"
-                                    data-bs-placement="right" title="SESSIONS INCLUDE:
-- FREE NUTRITION CONSULTATION
-- UNLIMITED EQUIPMENTS
-- OPTIONAL MEASUREMENTS MONITORING
-- WEIGHT LOSING TIPS
-- NO TIME RESTRICTION "><i class="fa fa-exclamation-circle fa-1x"></i></span></h2>
+                            <h2>€550</h2>
                             <span>12 sessions</span>
                         </div>
                         <div class="pi-price">
-                            <h2>€1450 <span class="tip" style="position: absolute;" data-bs-toggle="tooltip"
-                                    data-bs-placement="right" title="SESSIONS INCLUDE:
-- FREE NUTRITION CONSULTATION
-- UNLIMITED EQUIPMENTS
-- OPTIONAL MEASUREMENTS MONITORING
-- WEIGHT LOSING TIPS
-- NO TIME RESTRICTION "><i class="fa fa-exclamation-circle fa-1x"></i></span></h2>
+                            <h2>€1450</h2>
                             <span>36 sessions <br>(3 sessions per week)</span>
                         </div>
                         <!--<ul>
@@ -573,38 +505,42 @@
                 </div>
                 <div class="col-lg-5 col-md-8">
                     <div class="ps-item">
-                        <h3>Personal Training 2:1</h3>
+                        <h3>Buddy Training 2:1
+                            <span class="tip" style="position: absolute; font-size: 15px;" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" 
+                            title="Who is it for?<br><br>
+                            • Anyone feeling unsure about signing up but would love the company of a friend to join with them<br>
+                            • A couple setting goals for their wedding or holiday<br>
+                            • Bargain hunters - Share the price, go half with your buddy<br>
+                            • Anyone in your family interested in getting fit and healthy with you<br>
+                            • Any beginner who is intimated by a busy gym or crowed group classe<br>
+                            <br><br>
+                            What do you get? <br><br>
+                            • Train with your buddy<br>
+                            • Additional motivation and encouragement for each other<br>
+                            • A full body composition and weekly check ins with the Tabitha scales (no more uncomfortable body pinching)<br>
+                            • Nutrition guidance – tailored to you and your buddy<br>
+                            • Education on technique and the correct training methods<br>
+                            • Fun friendly environment (egos left at the door)<br>
+                            • Results without restrictions"
+                            
+                            
+                            
+                            
+                            "><i class="fa fa-exclamation-circle fa-1x"></i></span></h3>
                         <div class="pricing_tag">
                             <p>VIP Package</p>
                         </div>
                         <div class="pi-price">
-                            <h2>€450 <span class="tip" style="position: absolute;" data-bs-toggle="tooltip"
-                                    data-bs-placement="right" title="SESSIONS INCLUDE:
-- FREE NUTRITION CONSULTATION
-- UNLIMITED EQUIPMENTS
-- OPTIONAL MEASUREMENTS MONITORING
-- WEIGHT LOSING TIPS
-- NO TIME RESTRICTION "><i class="fa fa-exclamation-circle fa-1x"></i></span></h2>
+                            <h2>€450</h2>
                             <span>8 sessions</span>
                         </div>
                         <div class="pi-price">
-                            <h2>€650 <span class="tip" style="position: absolute;" data-bs-toggle="tooltip"
-                                    data-bs-placement="right" title="SESSIONS INCLUDE:
-- FREE NUTRITION CONSULTATION
-- UNLIMITED EQUIPMENTS
-- OPTIONAL MEASUREMENTS MONITORING
-- WEIGHT LOSING TIPS
-- NO TIME RESTRICTION "><i class="fa fa-exclamation-circle fa-1x"></i></span></h2>
+                            <h2>€650</h2>
                             <span>12 sessions</span>
                         </div>
                         <div class="pi-price">
-                            <h2>€1800 <span class="tip" style="position: absolute;" data-bs-toggle="tooltip"
-                                    data-bs-placement="right" title="SESSIONS INCLUDE:
-- FREE NUTRITION CONSULTATION
-- UNLIMITED EQUIPMENTS
-- OPTIONAL MEASUREMENTS MONITORING
-- WEIGHT LOSING TIPS
-- NO TIME RESTRICTION "><i class="fa fa-exclamation-circle fa-1x"></i></span></h2>
+                            <h2>€1800</h2>
                             <span>36 sessions <br>(3 sessions per week)</span>
                         </div>
                         <!--<a href="#" class="primary-btn pricing-btn">Enroll now</a>
@@ -613,23 +549,32 @@
                 </div>
                 <div class="col-lg-5 col-md-8">
                     <div class="ps-item">
-                        <h3>Group Training 6:1</h3>
+                        <h3>Group Training 6:1
+                            <span class="tip" style="position: absolute; font-size: 15px;" data-bs-toggle="tooltip"
+                            data-bs-placement="right" 
+                            title="Who is it for?<br><br>
+                            • Classes are adaptable and designed to cater to all levels of fitness<br>
+                            • Anyone looking to get started but isn’t ready to invest in Personal Training<br>
+                            • Someone lacking confidence in large groups<br>
+                            <br>
+                            What do you get?<br><br>
+                            • Training Sessions that are specifically programmed & scientifically backed to lean up and trim unwanted pounds... so you can finally get the results you know you deserve and crave<br>
+                            • A fully comprehensive, simple, and easy-to-follow nutrition plan to help you accelerate results, RADICALLY boost energy and give you the KICK START you need.<br>
+                            • Recipe books so that you NEVER have to think about what to eat again, all with scan-able barcodes to stick into MyFitnessPal with calorie, protein, fat, and carb breakdowns.<br>
+                            • Support and mentoring from your coach so that you Get & Keep the results you want"> <i class="fa fa-exclamation-circle fa-1x"></i></span>
+                           
+                        </span>
+                        </h3>
                         <div class="pi-price">
-                            <h2>€160 <span class="tip" style="position: absolute;" data-bs-toggle="tooltip"
-                                    data-bs-placement="right" title="SESSIONS INCLUDE:
-- FREE NUTRITION CONSULTATION
-- UNLIMITED EQUIPMENTS
-- OPTIONAL MEASUREMENTS MONITORING
-- WEIGHT LOSING TIPS
-- NO TIME RESTRICTION"><i class="fa fa-exclamation-circle fa-1x"></i></span></h2>
+                            <h2>€160</h2>
                             <span>12 sessions <br>(3 sessions per week)</span><br>
                             <br><span>All Sessions Include:</span><br>
                             <br>
-                            <span>- Free nutrition consultation<br></span>
-                            <span>- Unlimited equipments<br></span>
-                            <span>- Optional measurements monitoring<br></span>
-                            <span>- Weight losing tips<br></span>
-                            <span>- No time restriction<br></span>
+                            <span>• Free nutrition consultation<br></span>
+                            <span>• Unlimited equipments<br></span>
+                            <span>• Optional measurements monitoring<br></span>
+                            <span>• Weight losing tips<br></span>
+                            <span>• No time restriction<br></span>
                             <!-- <button class="tip">My button</button> -->
                         </div>
                         <!--<a href="#" class="primary-btn pricing-btn">Enroll now</a>
@@ -730,7 +675,7 @@
             <div class="d-flex justify-content-center">
 
                     <div>
-                        <div class="section-title contact-title">
+                        <div class="section-title contact-title text-center">
                         
                         <h2>CONTACT US</h2>
 
@@ -743,36 +688,35 @@
                                     <div class="col-md-4">
                                         <div class="gt-text">
                                             <i class="fa fa-map-marker"></i>
-                                            <p>333 Middle Winchendon Rd, Rindge,<br /> NH 03461</p>
+                                            <p>36 Fitzwilliam Street Upper, Dublin 2, D02 YD43</p>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="gt-text">
                                             <i class="fa fa-mobile"></i>
                                             <ul>
-                                                <li>125-711-811</li>
-                                                <li>125-668-886</li>
+                                                <li>+353-861-204-676</li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="gt-text email">
                                             <i class="fa fa-envelope"></i>
-                                            <p>Support.gymcenter@gmail.com</p>
+                                            <p>bodybuddiespt@gmail.com
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <h2>Our Social Media</h2>
                                 <br>
-                                <div class="row d-flex justify-content-around">
+                                <div class="row d-flex align-items-center justify-content-center">
                                     <ul class="scial">
-                                        <li ><a href=""><i class="fa fa-instagram fa-2x"></i> Instagram</a></li>
-                                        <li ><a href=""><i class="fa fa-facebook fa-2x"></i> Facebook</a></li>
+                                        <li ><a href="https://www.instagram.com/bodybuddies_gym/"><i class="fa fa-instagram fa-2x"></i> Instagram</a></li>
+                                        <li ><a href="https://www.facebook.com/bodybuddiesgym"><i class="fa fa-facebook fa-2x"></i> Facebook</a></li>
                                         <li ><a href=""><i class="fa fa-twitter fa-2x"></i> Twitter</a></li>
                                         <li ><a href=""><i class="fa fa-youtube fa-2x"></i> Youtube</a></li>
                                     </ul>
-
                                 </div>
                             </div>
                         </div>
@@ -816,10 +760,9 @@
                 </div> -->
             </div>
             <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.3854188721593!2d-6.251469684161956!3d53.33635657997699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e97b7bd8c7f%3A0x2197a50cae09986!2sBody%20Buddies!5e0!3m2!1sid!2sid!4v1629975435253!5m2!1sid!2sid"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+                <iframe width="700" height="450" src="https://maps.google.com/maps?q=Body%20Buddies%2036%20Fitzwilliam%20Street%20Upper,%20Dublin%202,%20D02%20YD43,%20Irlandia&t=&z=17&ie=UTF8&iwloc=&output=embed" 
+                 allowfullscreen="" loading="lazy"></iframe>
+             </div>
         </div>
     </section>
     <!-- Team Section End -->
@@ -832,15 +775,14 @@
     <!-- Footer Section Begin -->
     <section class="footer-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
+            <div class="row justify-content-center">
+                <div class="col-xs-12 col-lg-4">
                     <div class="fs-about">
-                        <div class="fa-logo">
+                        <div class="fa-logo text-center">
                             <a href="#"><img src="assets/Logo - Transparent.png" alt=""></a>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore dolore magna aliqua endisse ultrices gravida lorem.</p>
-                        <div class="fa-social">
+                      
+                        <div class="fa-social text-center">
                             <a href="https://www.facebook.com/bodybuddiesgym"><i class="fa fa-facebook"></i></a>
                             <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
                             <!-- <a href="#"><i class="fa fa-youtube-play"></i></a> -->
@@ -849,7 +791,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
+                <div class="col-lg-2 col-md-3 col-sm-6 text-center">
                     <div class="fs-widget">
                         <h4>Useful links</h4>
                         <ul>
@@ -860,7 +802,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
+                <div class="col-lg-2 col-md-3 col-sm-6 text-center">
                     <div class="fs-widget">
                         <h4>Support</h4>
                         <ul>
@@ -871,7 +813,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 text-center">
                     <div class="fs-widget">
                         <h4>Tips & Guides</h4>
                         <div class="fw-recent">
@@ -957,11 +899,33 @@
     </script>
 
 <script>
-      tippy('.tip', {
-        content: "SESSIONS INCLUDE:<br>- FREE NUTRITION CONSULTATION<br>- UNLIMITED EQUIPMENTS<br>- OPTIONAL MEASUREMENTS MONITORING<br>- WEIGHT LOSING TIPS<br>- NO TIME RESTRICTION",
-        allowHTML: true,
-        trigger:'click'
-      });
+    //   tippy('.tip', {
+    //     content: "Who is it for?<br><br>• YOU!! Anyone interested in getting fit and healthy<br>• Anyone looking to enhance their strength to prevent or aid recovery from an injury<br>• Any beginner who is intimated by a busy gym or crowed group classes<br>• Someone who is ready to change and put the hard work in ( no quick fix here )<br>• COMPLETE FLEXIBILITY with Personal Training you can pick the days/times that suit best to work around your busy life schedule <br><br>What do you get?<br><br>• Body Buddies trainers provide each member with 100% time and attention in every session<br>• A full body composition and weekly check-ins with the Tabitha scales ( no more uncomfortable body pinching )<br>Nutrition guidance – tailored to you<br>• Education on technique and the correct training methods<br>• Fun friendly environment (egos left at the door)<br>• Results without restrictions",
+    //     allowHTML: true,
+    //     position: 'bottom',
+    //     trigger:'click'
+    //   });
+
+    $(document).ready(function(){
+    tippy('[title]', {		
+				// change these to your liking
+				arrow: true,
+				placement: 'bottom', // top, right, bottom, left
+                trigger:'click', //ms
+				distance: 15, //px or string
+				maxWidth: 400, //px or string
+				// leave these as they are
+				followCursor: true,
+				allowHTML: true,
+        theme: 'custom',
+				ignoreAttributes: true,
+        content(reference) {
+            const title = reference.getAttribute('title');
+            reference.removeAttribute('title');
+            return title;
+        },
+    });
+});
 </script>
     <script>
         $(function () {
