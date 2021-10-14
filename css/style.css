@@ -54,6 +54,7 @@ p {
 
 img {
 	max-width: 100%;
+	width: 200px;
 }
 
 input:focus,
@@ -76,6 +77,10 @@ ol {
 	margin: 0;
 }
 
+.link-nav a{color: #3ce207; font-size: 0.8em; display: none;}
+.free{
+	border-radius: 20px;
+}
 /*---------------------
   Helper CSS
 -----------------------*/
@@ -84,8 +89,16 @@ ol {
 	margin-bottom: 45px;
 	text-align: center;
 }
-
 .section-title span {
+    font-size: 24px;
+    color: #3ce207;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.text-aboutus p{
+	text-align: center !important;
+}
+.nav-menu span {
 	font-size: 16px;
 	color: #3ce207;
 	text-transform: uppercase;
@@ -296,8 +309,8 @@ ol {
 	top: 0;
 	width: 100%;
 	padding: 0 15px;
-	padding-top: 55px;
-	z-index: 99;
+	height: 100px;
+	z-index: 999;
 }
 
 .logo a {
@@ -387,7 +400,22 @@ ol {
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
-
+.nav{
+	margin-top: 2em;
+}
+.nav ul li a{
+	color: #ffffff;
+	font-size: 15px;	
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 10px 0px;
+	position: relative;
+}
+.nav ul li a::after{
+	background: #3ce207;
+	content: "";
+}
 .nav-menu ul li a:after {
 	position: absolute;
 	left: 0;
@@ -405,15 +433,17 @@ ol {
 	transition: all 0.3s;
 }
 
-.top-option {
+.top-option {	
 	text-align: right;
 	padding: 9px 0;
+	margin-top: 5px !important;
 }
 
 .top-option .to-search {
 	display: inline-block;
 	padding-right: 20px;
 	position: relative;
+	margin-top: ;
 }
 
 .top-option .to-search:after {
@@ -450,6 +480,7 @@ ol {
 .canvas-open {
 	display: none;
 }
+.col-lg-2{}
 
 /*---------------------
   Hero Section
@@ -1368,6 +1399,7 @@ ol {
 	float: right;
 	margin-top: -40px;
 }
+
 
 .about-text .about-bar .ab-item .barfiller .tip:after {
 	display: none;
@@ -2653,10 +2685,12 @@ ol {
 .map {
 	height: 550px;
 	margin-top: 35px;
+
 }
 
 .map iframe {
 	width: 100%;
+	
 }
 
 /*---------------------
@@ -2795,6 +2829,13 @@ ol {
 @media only screen and (min-width: 1650px) and (max-width: 1920px) {
 	.nav-menu ul li {
 		margin-right: 60px;
+		
+	}
+	.gmap_canvas{
+		max-width: 100%;
+		position: relative;
+		left: 25%;
+		right: 25%;
 	}
 }
 
@@ -2802,11 +2843,23 @@ ol {
 	.container {
 		max-width: 1170px;
 	}
+	.gmap_canvas{
+		width: 800px !important;
+		position: relative;
+		left: 25%;
+		right: 25%;
+	}
 }
 
 /* Medium Device = 1200px */
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.gmap_canvas{
+		width: 800px !important;
+		position: relative;
+		left: 10%;
+		right: 25%;
+	}
 	.nav-menu ul li {
 		margin-right: 5px;
 	}
@@ -2836,6 +2889,11 @@ ol {
 /* Tablet Device = 768px */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+	.gmap_canvas{
+		width: 600px !important;
+		position: relative;
+	
+	}
 	.about-text {
 		height: auto;
 		padding: 120px 70px 60px 70px;
@@ -2906,9 +2964,9 @@ ol {
 	.canvas-open {
 		position: absolute;
 		right: 40px;
-		top: 61px;
+		top: 30px;
 		font-size: 22px;
-		width: 30px;
+		width: 40px;
 		height: 30px;
 		color: #ffffff;
 		border: 1px solid #ffffff;
@@ -3033,6 +3091,13 @@ ol {
 /* Wide Mobile = 480px */
 
 @media only screen and (max-width: 767px) {
+	.gmap_canvas{
+		width: 600px !important;
+		position: relative;
+		right: 10%;
+	}
+	.free{font-size: 18px;}
+	.link-nav {margin-bottom: 20px;}
 	.offcanvas-menu-overlay {
 		position: fixed;
 		left: 0;
@@ -3052,7 +3117,7 @@ ol {
 	.canvas-open {
 		position: absolute;
 		right: 40px;
-		top: 61px;
+		top: 30px;
 		font-size: 22px;
 		width: 30px;
 		height: 30px;
@@ -3263,6 +3328,20 @@ ol {
 /* Small Device = 320px */
 
 @media only screen and (max-width: 479px) {
+	.col-lg-4 > img{
+		height: 100px !important;
+		width: 230px;
+		margin: 0;
+		position: relative;
+		right: 30px;
+	}
+	.header-section{
+		height: 160px;
+	}
+	.link-nav a{
+		display: initial;
+		
+	}
 	.primary-btn.appoinment-btn {
 		float: none;
 		margin-top: 0;
@@ -3302,3 +3381,24 @@ ol {
 		font-size: 8px;
 	}
 }
+
+/* tool tip */
+.tip{z-index:2 !important;}
+.tippy-tooltip.custom-theme {
+	background-color: white;
+	color: black;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+  .tippy-tooltip.custom-theme[data-placement^='top'] .tippy-arrow {
+	border-top-color: white;
+  }
+  .tippy-tooltip.custom-theme[data-placement^='bottom'] .tippy-arrow {
+	border-bottom-color: white;
+  }
+  .tippy-tooltip.custom-theme[data-placement^='left'] .tippy-arrow {
+	border-left-color: white;
+  }
+  .tippy-tooltip.custom-theme[data-placement^='right'] .tippy-arrow {
+	border-right-color: white;
+  }
+  
