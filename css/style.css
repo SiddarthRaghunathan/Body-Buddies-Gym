@@ -1,4 +1,3 @@
-
 html,
 body {
 	height: 100%;
@@ -80,6 +79,16 @@ ol {
 .link-nav a{color: #3ce207; font-size: 0.8em; display: none;}
 .free{
 	border-radius: 20px;
+}
+/* NEW PAGE */
+.ppt-new{
+	background: #151515;
+}
+.content-ppt > span{
+	font-size: 24px;
+    color: #3ce207;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 /*---------------------
   Helper CSS
@@ -789,9 +798,15 @@ ol {
 
 }
 
-.ps-item:hover h3 {
-	color: #111111;
+.ps-item:hover h3{
+	color: #111111 !important;
 }
+.fa-exclamation-circle{
+	position: fixed;
+	color: #3ce207;
+	font-size: 15px;
+}
+
 
 .ps-item:hover .pi-price span {
 	color: #444444;
@@ -1139,7 +1154,6 @@ ol {
 }
 
 .gt-text ul {
-	overflow: hidden;
 	padding-top: 20px;
 }
 
@@ -2697,6 +2711,8 @@ ol {
   404 Section
 -----------------------*/
 
+
+
 .section-404 {
 	position: fixed;
 	width: 100%;
@@ -2726,6 +2742,7 @@ ol {
 .scial {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 
